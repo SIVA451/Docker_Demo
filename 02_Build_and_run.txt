@@ -1,4 +1,5 @@
-docker build -t flask-demo:latest .
-docker run -d -p 5000:5000 flask-demo:latest
-curl http://localhost:5000        # quick health-check
-# For EC2 Instances use the Public IP.
+docker build -t docker-demo:latest demo/
+docker run -d -p 5000:5000 --name demo-web docker-demo
+docker ps
+docker logs demo-web         
+curl http://localhost:5000

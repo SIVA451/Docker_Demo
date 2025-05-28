@@ -5,3 +5,4 @@ sudo usermod -aG docker ec2-user
 docker version
 docker info
 docker run hello-world       
+sudo yum install -y git
